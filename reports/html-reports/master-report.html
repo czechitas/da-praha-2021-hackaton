@@ -220,15 +220,15 @@
 
         <tr>
             <td>Start</td>
-            <td>2021-11-27T15:11:45Z</td>
+            <td>2021-11-27T18:13:06Z</td>
         </tr>
         <tr>
             <td>End</td>
-            <td>2021-11-27T16:11:53+01:00</td>
+            <td>2021-11-27T19:13:17+01:00</td>
         </tr>
         <tr>
             <td>Duration</td>
-            <td>00:00:07.64</td>
+            <td>00:00:11.52</td>
         </tr>
         <tr>
             <td>Breakdown</td>
@@ -240,9 +240,9 @@
                         <td class='test-fail'>Failures</td>
                     </tr>
                     <tr>
+                        <td>0</td>
+                        <td>0</td>
                         <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
                     </tr>
                 </table>
             </td>
@@ -277,7 +277,7 @@
                                 <table class="table table-bordered table-suite">
                                     <tr class="suite-header">
                                         <td colspan="2"
-                                            class="suite-pass">
+                                            class="suite-fail">
                                             <h3>
                                                 <span style="margin: 2px; padding: 1px">&nbsp;</span>Suite EXTERMINATORS - HACKATHON TEST SUITE
                                             </h3>
@@ -286,15 +286,15 @@
 
                                         <tr>
                                             <td>Suite Start</td>
-                                            <td>2021-11-27T15:11:45.432Z</td>
+                                            <td>2021-11-27T18:13:06.138Z</td>
                                         </tr>
                                         <tr>
                                             <td>Suite End</td>
-                                            <td>2021-11-27T15:11:52.492Z</td>
+                                            <td>2021-11-27T18:13:16.922Z</td>
                                         </tr>
                                         <tr>
                                             <td>Suite Duration</td>
-                                            <td>00:00:07.06</td>
+                                            <td>00:00:10.78</td>
                                         </tr>
 
 
@@ -308,12 +308,30 @@
                                                             <td>
                                                                 <table class="table table-test">
                                                                     <tr class="test-header">
-                                                                        <td colspan="2" class="test-pass">
+                                                                        <td colspan="2" class="test-fail">
                                                                             <span class="test-expand">&nbsp;</span>
-                                                                            <span class="success">&#10004;</span>
-                                                                            <span class="test-title">Main page room reservation</span>
+                                                                            <span class="error">&#10006;</span>
+                                                                            <span class="test-title">Room reservation from the room page</span>
                                                                         </td>
                                                                     </tr>
+
+                                                                            <tr class="test-row ">
+                                                                                <td colspan="2" >
+                                                                                    <p class="pre assert expandable-control">
+                                                                                        <span style="margin: 2px; padding: 1px" class='glyphicon glyphicon-chevron-down'>&nbsp;</span>
+                                                                                        Assertion: Cannot read property &#x27;setValue&#x27; of undefined
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="test-row">
+                                                                                <td colspan="2">
+                                                                                   <pre class='pre stack panel'>TypeError: Cannot read property &#x27;setValue&#x27; of undefined
+    at Context.&lt;anonymous&gt; (C:\Users\Luca\Desktop\DA zapisky\da-test-praha-2021-hackaton\test\specs\/example.e2e.js:55:25)
+    at Context.executeSync (C:\Users\Luca\Desktop\DA zapisky\da-test-praha-2021-hackaton\node_modules\@wdio\sync\build\index.js:38:22)
+    at C:\Users\Luca\Desktop\DA zapisky\da-test-praha-2021-hackaton\node_modules\@wdio\sync\build\index.js:69:68</pre>
+                                                                                </td>
+                                                                            </tr>
+
 
                                                                 </table>
                                                             </td>
